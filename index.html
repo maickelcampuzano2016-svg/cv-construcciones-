@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CV Construcciones</title>
+  <title>CV Construcciones | Estructuras Metálicas</title>
 
   <style>
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    html {
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: white;
+      line-height: 1.6;
     }
 
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
-      background: #111;
-      padding: 15px 25px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      width: 100%;
+      padding: 20px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
     }
 
     .logo {
-      color: #fff;
       font-size: 25px;
       font-weight: bold;
+      color: #f5b900;
     }
 
     .logo span {
-      color: #f5b900;
+      color: white;
+      font-size: 16px;
+      display: block;
+      letter-spacing: 2px;
     }
 
     nav {
       display: flex;
-      gap: 20px;
+      gap: 25px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: #f5b900;
     }
 
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
-      min-height: 85vh;
-      background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)),
-        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80")
-        center/cover;
+      min-height: 90vh;
 
       display: flex;
       align-items: center;
-      padding: 60px 8%;
-      color: white;
+
+      padding: 80px 7%;
+
+      background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=80");
+
+      background-size: cover;
+      background-position: center;
     }
 
     .hero-content {
@@ -77,8 +94,8 @@
     }
 
     .hero h1 {
-      font-size: clamp(42px, 7vw, 75px);
-      line-height: 1;
+      font-size: 60px;
+      line-height: 1.1;
       margin-bottom: 25px;
     }
 
@@ -88,8 +105,8 @@
 
     .hero p {
       font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 30px;
+      color: #ddd;
+      margin-bottom: 35px;
     }
 
     .botones {
@@ -98,123 +115,214 @@
       flex-wrap: wrap;
     }
 
-    .boton {
+    .btn {
       display: inline-block;
-      padding: 14px 24px;
+      padding: 14px 25px;
+      background: #f5b900;
+      color: #111;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      transition: 0.3s;
     }
 
-    .amarillo {
-      background: #f5b900;
-      color: #111;
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #ffc928;
     }
 
-    .borde {
-      border: 2px solid white;
+    .btn-outline {
+      background: transparent;
       color: white;
+      border: 2px solid #f5b900;
     }
 
-    section {
-      padding: 80px 8%;
+    /* =========================
+       SECCIONES
+    ========================= */
+
+    section:not(.hero) {
+      padding: 90px 7%;
     }
 
     .titulo {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .titulo h2 {
       font-size: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 15px;
     }
 
     .titulo span {
       color: #f5b900;
     }
 
-    .nosotros {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+    .titulo p {
+      color: #bbb;
     }
 
-    .nosotros p {
+    /* =========================
+       NOSOTROS
+    ========================= */
+
+    #nosotros {
+      background: #181818;
+    }
+
+    .nosotros-contenido {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .nosotros-contenido p {
+      color: #ccc;
       font-size: 18px;
-      line-height: 1.8;
+      margin-bottom: 20px;
     }
 
-    .servicios {
-      background: #151515;
-      color: white;
+    /* =========================
+       SERVICIOS
+    ========================= */
+
+    #servicios {
+      background: #111;
     }
 
-    .tarjetas {
+    .servicios-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
     }
 
-    .tarjeta {
-      background: #242424;
-      padding: 30px;
-      border-radius: 10px;
-      min-height: 220px;
+    .servicio {
+      background: #1c1c1c;
+      padding: 35px 25px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      transition: 0.3s;
     }
 
-    .tarjeta .numero {
+    .servicio:hover {
+      transform: translateY(-8px);
+      border-color: #f5b900;
+    }
+
+    .servicio h3 {
       color: #f5b900;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    .tarjeta h3 {
-      margin: 20px 0 10px;
+      margin-bottom: 15px;
       font-size: 22px;
     }
 
-    .tarjeta p {
-      color: #ddd;
-      line-height: 1.6;
+    .servicio p {
+      color: #bbb;
     }
 
-    .proyectos {
+    /* =========================
+       PROYECTOS
+    ========================= */
+
+    #proyectos {
+      background: #181818;
+    }
+
+    .proyectos-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 25px;
     }
 
     .proyecto {
-      background: #222;
-      color: white;
-      height: 230px;
-      border-radius: 10px;
+      background: #111;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #333;
+    }
+
+    .proyecto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .proyecto-info {
+      padding: 20px;
+    }
+
+    .proyecto-info h3 {
+      color: #f5b900;
+      margin-bottom: 8px;
+    }
+
+    .proyecto-info p {
+      color: #bbb;
+    }
+
+    /* =========================
+       CONTACTO
+    ========================= */
+
+    #contacto {
+      background: #111;
+    }
+
+    .contacto-contenido {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contacto-contenido p {
+      color: #ccc;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .contacto-datos {
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      font-weight: bold;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
     }
 
-    .contacto {
-      background: #f5b900;
-      text-align: center;
+    .dato {
+      background: #1c1c1c;
+      padding: 20px 30px;
+      border-radius: 6px;
+      border: 1px solid #333;
     }
 
-    .contacto h2 {
-      font-size: 40px;
-      margin-bottom: 15px;
+    .dato strong {
+      display: block;
+      color: #f5b900;
+      margin-bottom: 5px;
     }
 
-    .contacto p {
-      font-size: 19px;
-      margin-bottom: 25px;
-    }
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      background: #111;
-      color: white;
       text-align: center;
-      padding: 30px;
+      padding: 25px;
+      background: #080808;
+      color: #888;
+      border-top: 1px solid #333;
     }
 
-    @media (max-width: 800px) {
+    footer span {
+      color: #f5b900;
+    }
+
+    /* =========================
+       CELULARES
+    ========================= */
+
+    @media (max-width: 900px) {
 
       header {
         flex-direction: column;
@@ -222,138 +330,421 @@
       }
 
       nav {
+        gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
       }
 
-      .hero {
-        min-height: 75vh;
+      .hero h1 {
+        font-size: 45px;
       }
 
-      .nosotros,
-      .tarjetas,
-      .proyectos {
+      .servicios-grid,
+      .proyectos-grid {
         grid-template-columns: 1fr;
       }
 
-      .titulo {
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        min-height: 80vh;
+        padding: 60px 6%;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section:not(.hero) {
+        padding: 70px 6%;
+      }
+
+      .titulo h2 {
         font-size: 32px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-<header>
 
-  <div class="logo">
-    CV <span>CONSTRUCCIONES</span>
-  </div>
+  <!-- =========================
+       ENCABEZADO
+  ========================= -->
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <header>
 
-</header>
+    <div class="logo">
+      CV
+      <span>CONSTRUCCIONES</span>
+    </div>
+
+    <nav>
+
+      <a href="#inicio">Inicio</a>
+
+      <a href="#nosotros">Nosotros</a>
+
+      <a href="#servicios">Servicios</a>
+
+      <a href="#proyectos">Proyectos</a>
+
+      <a href="#contacto">Contacto</a>
+
+    </nav>
+
+  </header>
 
 
-<section class="hero" id="inicio">
+  <!-- =========================
+       INICIO
+  ========================= -->
 
-  <div class="hero-content">
+  <section class="hero" id="inicio">
 
-    <h1>
-      Construimos
-      <span>soluciones</span>
-      para durar.
-    </h1>
+    <div class="hero-content">
 
-    <p>
-      Fabricación e instalación de estructuras metálicas,
-      cerramientos, puertas, soldadura y soluciones
-      para proyectos de construcción.
-    </p>
+      <h1>
+        Construimos
+        <span>soluciones</span>
+        para durar.
+      </h1>
 
-    <div class="botones">
+      <p>
+        Fabricación e instalación de estructuras metálicas,
+        cerramientos, puertas, soldadura y soluciones
+        para proyectos de construcción.
+      </p>
 
-      <a href="#servicios" class="boton amarillo">
-        VER SERVICIOS
-      </a>
+      <div class="botones">
 
-      <a href="#contacto" class="boton borde">
-        SOLICITAR COTIZACIÓN
-      </a>
+        <a href="#servicios" class="btn">
+          Ver nuestros servicios
+        </a>
+
+        <a href="#contacto" class="btn btn-outline">
+          Solicitar cotización
+        </a>
+
+      </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<section id="nosotros">
+  <!-- =========================
+       NOSOTROS
+  ========================= -->
 
-  <h2 class="titulo">
-    <span>01</span> Nosotros
-  </h2>
+  <section id="nosotros">
 
-  <div class="nosotros">
+    <div class="titulo">
 
-    <div>
       <h2>
-        Calidad, experiencia y trabajo a la medida.
+        Sobre <span>Nosotros</span>
       </h2>
-    </div>
-
-    <div>
 
       <p>
-        En CV Construcciones realizamos trabajos de
-        fabricación, montaje, reparación y mantenimiento
-        de estructuras metálicas.
-      </p>
-
-      <p>
-        Nuestro objetivo es ofrecer soluciones adaptadas
-        a las necesidades de cada cliente.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="servicios" id="servicios">
-
-  <h2 class="titulo">
-    <span>02</span> Servicios
-  </h2>
-
-  <div class="tarjetas">
-
-    <div class="tarjeta">
-      <div class="numero">01</div>
-
-      <h3>Estructuras metálicas</h3>
-
-      <p>
-        Fabricación y montaje de estructuras
-        metálicas según medidas y diseño.
+        Conoce un poco más de CV Construcciones
       </p>
 
     </div>
 
 
-    <div class="tarjeta">
-      <div class="numero">02</div>
-
-      <h3>Cerramientos</h3>
+    <div class="nosotros-contenido">
 
       <p>
-        Cerr
+        En CV Construcciones nos dedicamos a la fabricación,
+        instalación y mantenimiento de estructuras metálicas
+        y soluciones para proyectos de construcción.
+      </p>
+
+      <p>
+        Trabajamos con compromiso, responsabilidad y atención
+        a los detalles para entregar trabajos funcionales,
+        resistentes y de excelente acabado.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SERVICIOS
+  ========================= -->
+
+  <section id="servicios">
+
+    <div class="titulo">
+
+      <h2>
+        Nuestros <span>Servicios</span>
+      </h2>
+
+      <p>
+        Soluciones para diferentes necesidades de construcción
+      </p>
+
+    </div>
+
+
+    <div class="servicios-grid">
+
+
+      <div class="servicio">
+
+        <h3>Estructuras Metálicas</h3>
+
+        <p>
+          Fabricación e instalación de estructuras metálicas
+          para diferentes tipos de proyectos.
+        </p>
+
+      </div>
+
+
+      <div class="servicio">
+
+        <h3>Cerramientos</h3>
+
+        <p>
+          Fabricación e instalación de cerramientos en malla
+          eslabonada y diferentes sistemas metálicos.
+        </p>
+
+      </div>
+
+
+      <div class="servicio">
+
+        <h3>Puertas Metálicas</h3>
+
+        <p>
+          Fabricación de puertas metálicas, portones y
+          soluciones personalizadas.
+        </p>
+
+      </div>
+
+
+      <div class="servicio">
+
+        <h3>Soldadura</h3>
+
+        <p>
+          Trabajos de soldadura y fabricación de piezas
+          y estructuras metálicas.
+        </p>
+
+      </div>
+
+
+      <div class="servicio">
+
+        <h3>Mantenimiento</h3>
+
+        <p>
+          Reparación, mantenimiento y adecuación de
+          estructuras y elementos metálicos.
+        </p>
+
+      </div>
+
+
+      <div class="servicio">
+
+        <h3>Proyectos Especiales</h3>
+
+        <p>
+          Diseñamos y fabricamos soluciones de acuerdo
+          con las necesidades de cada proyecto.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PROYECTOS
+  ========================= -->
+
+  <section id="proyectos">
+
+    <div class="titulo">
+
+      <h2>
+        Nuestros <span>Proyectos</span>
+      </h2>
+
+      <p>
+        Algunos ejemplos de nuestros trabajos
+      </p>
+
+    </div>
+
+
+    <div class="proyectos-grid">
+
+
+      <div class="proyecto">
+
+        <img
+          src="https://images.unsplash.com/photo-1517089535810-7b9f4f1f0f2a?auto=format&fit=crop&w=1000&q=80"
+          alt="Estructura metálica">
+
+        <div class="proyecto-info">
+
+          <h3>Estructuras metálicas</h3>
+
+          <p>
+            Fabricación e instalación de estructuras.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="proyecto">
+
+        <img
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80"
+          alt="Proyecto de construcción">
+
+        <div class="proyecto-info">
+
+          <h3>Construcción</h3>
+
+          <p>
+            Soluciones para proyectos de construcción.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="proyecto">
+
+        <img
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+          alt="Obra de construcción">
+
+        <div class="proyecto-info">
+
+          <h3>Obras y proyectos</h3>
+
+          <p>
+            Trabajos realizados con calidad y compromiso.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACTO
+  ========================= -->
+
+  <section id="contacto">
+
+    <div class="titulo">
+
+      <h2>
+        <span>Contáctanos</span>
+      </h2>
+
+      <p>
+        Solicita información o una cotización para tu proyecto
+      </p>
+
+    </div>
+
+
+    <div class="contacto-contenido">
+
+      <p>
+        Estamos disponibles para estudiar tu proyecto,
+        conocer tus necesidades y ofrecerte una solución.
+      </p>
+
+
+      <div class="contacto-datos">
+
+        <div class="dato">
+
+          <strong>Teléfono</strong>
+
+          Próximamente
+
+        </div>
+
+
+        <div class="dato">
+
+          <strong>WhatsApp</strong>
+
+          Próximamente
+
+        </div>
+
+
+        <div class="dato">
+
+          <strong>Ubicación</strong>
+
+          Colombia
+
+        </div>
+
+      </div>
+
+
+      <a href="#inicio" class="btn">
+        Volver al inicio
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PIE DE PÁGINA
+  ========================= -->
+
+  <footer>
+
+    © 2026
+    <span>CV Construcciones</span>.
+    Todos los derechos reservados.
+
+  </footer>
+
+
+</body>
+
+</html>
