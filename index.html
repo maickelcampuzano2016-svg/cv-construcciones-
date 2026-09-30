@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CV Construcciones</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      padding: 15px 25px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f5b900;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f5b900;
+    }
+
+    .hero {
+      min-height: 85vh;
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+
+      display: flex;
+      align-items: center;
+      padding: 60px 8%;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #f5b900;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .botones {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 14px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .amarillo {
+      background: #f5b900;
+      color: #111;
+    }
+
+    .borde {
+      border: 2px solid white;
+      color: white;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .titulo {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .titulo span {
+      color: #f5b900;
+    }
+
+    .nosotros {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .nosotros p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .servicios {
+      background: #151515;
+      color: white;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: #242424;
+      padding: 30px;
+      border-radius: 10px;
+      min-height: 220px;
+    }
+
+    .tarjeta .numero {
+      color: #f5b900;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .tarjeta h3 {
+      margin: 20px 0 10px;
+      font-size: 22px;
+    }
+
+    .tarjeta p {
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .proyecto {
+      background: #222;
+      color: white;
+      height: 230px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .contacto {
+      background: #f5b900;
+      text-align: center;
+    }
+
+    .contacto h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .contacto p {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 800px) {
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+
+      .nosotros,
+      .tarjetas,
+      .proyectos {
+        grid-template-columns: 1fr;
+      }
+
+      .titulo {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    CV <span>CONSTRUCCIONES</span>
+  </div>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+  <div class="hero-content">
+
+    <h1>
+      Construimos
+      <span>soluciones</span>
+      para durar.
+    </h1>
+
+    <p>
+      Fabricación e instalación de estructuras metálicas,
+      cerramientos, puertas, soldadura y soluciones
+      para proyectos de construcción.
+    </p>
+
+    <div class="botones">
+
+      <a href="#servicios" class="boton amarillo">
+        VER SERVICIOS
+      </a>
+
+      <a href="#contacto" class="boton borde">
+        SOLICITAR COTIZACIÓN
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="nosotros">
+
+  <h2 class="titulo">
+    <span>01</span> Nosotros
+  </h2>
+
+  <div class="nosotros">
+
+    <div>
+      <h2>
+        Calidad, experiencia y trabajo a la medida.
+      </h2>
+    </div>
+
+    <div>
+
+      <p>
+        En CV Construcciones realizamos trabajos de
+        fabricación, montaje, reparación y mantenimiento
+        de estructuras metálicas.
+      </p>
+
+      <p>
+        Nuestro objetivo es ofrecer soluciones adaptadas
+        a las necesidades de cada cliente.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="servicios" id="servicios">
+
+  <h2 class="titulo">
+    <span>02</span> Servicios
+  </h2>
+
+  <div class="tarjetas">
+
+    <div class="tarjeta">
+      <div class="numero">01</div>
+
+      <h3>Estructuras metálicas</h3>
+
+      <p>
+        Fabricación y montaje de estructuras
+        metálicas según medidas y diseño.
+      </p>
+
+    </div>
+
+
+    <div class="tarjeta">
+      <div class="numero">02</div>
+
+      <h3>Cerramientos</h3>
+
+      <p>
+        Cerr
