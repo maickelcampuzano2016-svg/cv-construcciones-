@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CV Construcciones | Estructuras Metálicas</title>
+  <title>CV Construcciones y Servicios SAS | Estructuras Metálicas</title>
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -23,13 +22,9 @@
       line-height: 1.6;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
       width: 100%;
-      padding: 20px 7%;
+      padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -48,53 +43,47 @@
 
     .logo span {
       color: white;
-      font-size: 16px;
+      font-size: 13px;
       display: block;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
     }
 
     nav {
       display: flex;
-      gap: 25px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
+      transition: .3s;
     }
 
     nav a:hover {
       color: #f5b900;
     }
 
-    /* =========================
-       HERO
-    ========================= */
-
     .hero {
       min-height: 90vh;
-
       display: flex;
       align-items: center;
-
       padding: 80px 7%;
-
       background:
         linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
         url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=80");
-
       background-size: cover;
       background-position: center;
     }
 
     .hero-content {
-      max-width: 750px;
+      max-width: 800px;
     }
 
     .hero h1 {
-      font-size: 60px;
+      font-size: 58px;
       line-height: 1.1;
       margin-bottom: 25px;
     }
@@ -117,13 +106,13 @@
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
+      padding: 14px 24px;
       background: #f5b900;
       color: #111;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
-      transition: 0.3s;
+      border-radius: 6px;
+      transition: .3s;
     }
 
     .btn:hover {
@@ -137,22 +126,18 @@
       border: 2px solid #f5b900;
     }
 
-    /* =========================
-       SECCIONES
-    ========================= */
-
     section:not(.hero) {
-      padding: 90px 7%;
+      padding: 85px 7%;
     }
 
     .titulo {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
     .titulo h2 {
       font-size: 40px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .titulo span {
@@ -163,16 +148,12 @@
       color: #bbb;
     }
 
-    /* =========================
-       NOSOTROS
-    ========================= */
-
     #nosotros {
       background: #181818;
     }
 
     .nosotros-contenido {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
       text-align: center;
     }
@@ -182,10 +163,6 @@
       font-size: 18px;
       margin-bottom: 20px;
     }
-
-    /* =========================
-       SERVICIOS
-    ========================= */
 
     #servicios {
       background: #111;
@@ -199,30 +176,31 @@
 
     .servicio {
       background: #1c1c1c;
-      padding: 35px 25px;
+      padding: 32px 25px;
       border: 1px solid #333;
       border-radius: 8px;
-      transition: 0.3s;
+      transition: .3s;
     }
 
     .servicio:hover {
-      transform: translateY(-8px);
+      transform: translateY(-7px);
       border-color: #f5b900;
+    }
+
+    .icono {
+      font-size: 38px;
+      margin-bottom: 12px;
     }
 
     .servicio h3 {
       color: #f5b900;
-      margin-bottom: 15px;
-      font-size: 22px;
+      margin-bottom: 12px;
+      font-size: 21px;
     }
 
     .servicio p {
       color: #bbb;
     }
-
-    /* =========================
-       PROYECTOS
-    ========================= */
 
     #proyectos {
       background: #181818;
@@ -261,21 +239,17 @@
       color: #bbb;
     }
 
-    /* =========================
-       CONTACTO
-    ========================= */
-
     #contacto {
       background: #111;
     }
 
     .contacto-contenido {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
     }
 
-    .contacto-contenido p {
+    .contacto-contenido > p {
       color: #ccc;
       font-size: 18px;
       margin-bottom: 30px;
@@ -284,27 +258,45 @@
     .contacto-datos {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       flex-wrap: wrap;
       margin-bottom: 35px;
     }
 
     .dato {
       background: #1c1c1c;
-      padding: 20px 30px;
-      border-radius: 6px;
+      padding: 22px 28px;
+      border-radius: 7px;
       border: 1px solid #333;
+      min-width: 240px;
     }
 
     .dato strong {
       display: block;
       color: #f5b900;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    .dato a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .dato a:hover {
+      color: #f5b900;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+      margin: 5px;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
 
     footer {
       text-align: center;
@@ -318,21 +310,11 @@
       color: #f5b900;
     }
 
-    /* =========================
-       CELULARES
-    ========================= */
-
     @media (max-width: 900px) {
 
       header {
         flex-direction: column;
         gap: 15px;
-      }
-
-      nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
       }
 
       .hero h1 {
@@ -343,7 +325,6 @@
       .proyectos-grid {
         grid-template-columns: 1fr;
       }
-
     }
 
     @media (max-width: 600px) {
@@ -369,381 +350,376 @@
         font-size: 32px;
       }
 
-    }
+      nav {
+        gap: 12px;
+      }
 
+      nav a {
+        font-size: 14px;
+      }
+    }
   </style>
 
 </head>
 
-
 <body>
 
+<header>
 
-  <!-- =========================
-       ENCABEZADO
-  ========================= -->
+  <div class="logo">
+    CV
+    <span>CONSTRUCCIONES Y SERVICIOS SAS</span>
+  </div>
 
-  <header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <div class="logo">
-      CV
-      <span>CONSTRUCCIONES</span>
-    </div>
+</header>
 
-    <nav>
 
-      <a href="#inicio">Inicio</a>
+<section class="hero" id="inicio">
 
-      <a href="#nosotros">Nosotros</a>
+  <div class="hero-content">
 
-      <a href="#servicios">Servicios</a>
+    <h1>
+      Construimos
+      <span>soluciones</span>
+      para durar.
+    </h1>
 
-      <a href="#proyectos">Proyectos</a>
+    <p>
+      CV Construcciones y Servicios SAS ofrece fabricación,
+      instalación y mantenimiento de estructuras metálicas,
+      cerramientos, puertas, soldadura y acabados.
+    </p>
 
-      <a href="#contacto">Contacto</a>
+    <div class="botones">
 
-    </nav>
+      <a href="#servicios" class="btn">
+        Ver nuestros servicios
+      </a>
 
-  </header>
-
-
-  <!-- =========================
-       INICIO
-  ========================= -->
-
-  <section class="hero" id="inicio">
-
-    <div class="hero-content">
-
-      <h1>
-        Construimos
-        <span>soluciones</span>
-        para durar.
-      </h1>
-
-      <p>
-        Fabricación e instalación de estructuras metálicas,
-        cerramientos, puertas, soldadura y soluciones
-        para proyectos de construcción.
-      </p>
-
-      <div class="botones">
-
-        <a href="#servicios" class="btn">
-          Ver nuestros servicios
-        </a>
-
-        <a href="#contacto" class="btn btn-outline">
-          Solicitar cotización
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       NOSOTROS
-  ========================= -->
-
-  <section id="nosotros">
-
-    <div class="titulo">
-
-      <h2>
-        Sobre <span>Nosotros</span>
-      </h2>
-
-      <p>
-        Conoce un poco más de CV Construcciones
-      </p>
-
-    </div>
-
-
-    <div class="nosotros-contenido">
-
-      <p>
-        En CV Construcciones nos dedicamos a la fabricación,
-        instalación y mantenimiento de estructuras metálicas
-        y soluciones para proyectos de construcción.
-      </p>
-
-      <p>
-        Trabajamos con compromiso, responsabilidad y atención
-        a los detalles para entregar trabajos funcionales,
-        resistentes y de excelente acabado.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       SERVICIOS
-  ========================= -->
-
-  <section id="servicios">
-
-    <div class="titulo">
-
-      <h2>
-        Nuestros <span>Servicios</span>
-      </h2>
-
-      <p>
-        Soluciones para diferentes necesidades de construcción
-      </p>
-
-    </div>
-
-
-    <div class="servicios-grid">
-
-
-      <div class="servicio">
-
-        <h3>Estructuras Metálicas</h3>
-
-        <p>
-          Fabricación e instalación de estructuras metálicas
-          para diferentes tipos de proyectos.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <h3>Cerramientos</h3>
-
-        <p>
-          Fabricación e instalación de cerramientos en malla
-          eslabonada y diferentes sistemas metálicos.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <h3>Puertas Metálicas</h3>
-
-        <p>
-          Fabricación de puertas metálicas, portones y
-          soluciones personalizadas.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <h3>Soldadura</h3>
-
-        <p>
-          Trabajos de soldadura y fabricación de piezas
-          y estructuras metálicas.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <h3>Mantenimiento</h3>
-
-        <p>
-          Reparación, mantenimiento y adecuación de
-          estructuras y elementos metálicos.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <h3>Proyectos Especiales</h3>
-
-        <p>
-          Diseñamos y fabricamos soluciones de acuerdo
-          con las necesidades de cada proyecto.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PROYECTOS
-  ========================= -->
-
-  <section id="proyectos">
-
-    <div class="titulo">
-
-      <h2>
-        Nuestros <span>Proyectos</span>
-      </h2>
-
-      <p>
-        Algunos ejemplos de nuestros trabajos
-      </p>
-
-    </div>
-
-
-    <div class="proyectos-grid">
-
-
-      <div class="proyecto">
-
-        <img
-          src="https://images.unsplash.com/photo-1517089535810-7b9f4f1f0f2a?auto=format&fit=crop&w=1000&q=80"
-          alt="Estructura metálica">
-
-        <div class="proyecto-info">
-
-          <h3>Estructuras metálicas</h3>
-
-          <p>
-            Fabricación e instalación de estructuras.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="proyecto">
-
-        <img
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80"
-          alt="Proyecto de construcción">
-
-        <div class="proyecto-info">
-
-          <h3>Construcción</h3>
-
-          <p>
-            Soluciones para proyectos de construcción.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="proyecto">
-
-        <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
-          alt="Obra de construcción">
-
-        <div class="proyecto-info">
-
-          <h3>Obras y proyectos</h3>
-
-          <p>
-            Trabajos realizados con calidad y compromiso.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       CONTACTO
-  ========================= -->
-
-  <section id="contacto">
-
-    <div class="titulo">
-
-      <h2>
-        <span>Contáctanos</span>
-      </h2>
-
-      <p>
-        Solicita información o una cotización para tu proyecto
-      </p>
-
-    </div>
-
-
-    <div class="contacto-contenido">
-
-      <p>
-        Estamos disponibles para estudiar tu proyecto,
-        conocer tus necesidades y ofrecerte una solución.
-      </p>
-
-
-      <div class="contacto-datos">
-
-        <div class="dato">
-
-          <strong>Teléfono</strong>
-
-          Próximamente
-
-        </div>
-
-
-        <div class="dato">
-
-          <strong>WhatsApp</strong>
-
-          Próximamente
-
-        </div>
-
-
-        <div class="dato">
-
-          <strong>Ubicación</strong>
-
-          Colombia
-
-        </div>
-
-      </div>
-
-
-      <a href="#inicio" class="btn">
-        Volver al inicio
+      <a href="https://wa.me/573008535991?text=Hola%20CV%20Construcciones%20y%20Servicios%20SAS,%20quiero%20solicitar%20una%20cotizaci%C3%B3n."
+         class="btn whatsapp">
+        Cotizar por WhatsApp
       </a>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- =========================
-       PIE DE PÁGINA
-  ========================= -->
+<section id="nosotros">
 
-  <footer>
+  <div class="titulo">
 
-    © 2026
-    <span>CV Construcciones</span>.
-    Todos los derechos reservados.
+    <h2>
+      Sobre <span>Nosotros</span>
+    </h2>
 
-  </footer>
+    <p>
+      CV Construcciones y Servicios SAS
+    </p>
 
+  </div>
+
+  <div class="nosotros-contenido">
+
+    <p>
+      En CV Construcciones y Servicios SAS nos dedicamos
+      a la fabricación, instalación y mantenimiento de
+      estructuras metálicas y soluciones para proyectos
+      de construcción.
+    </p>
+
+    <p>
+      También desarrollamos trabajos de cerramientos,
+      puertas metálicas, soldadura, mantenimiento y
+      acabados para diferentes tipos de proyectos.
+    </p>
+
+    <p>
+      Trabajamos con compromiso, responsabilidad y atención
+      a los detalles para entregar soluciones funcionales,
+      resistentes y con excelentes acabados.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="servicios">
+
+  <div class="titulo">
+
+    <h2>
+      Nuestros <span>Servicios</span>
+    </h2>
+
+    <p>
+      Soluciones para diferentes necesidades de construcción
+    </p>
+
+  </div>
+
+  <div class="servicios-grid">
+
+
+    <div class="servicio">
+
+      <div class="icono">🏗️</div>
+
+      <h3>Estructuras Metálicas</h3>
+
+      <p>
+        Fabricación e instalación de estructuras metálicas
+        para diferentes tipos de proyectos.
+      </p>
+
+    </div>
+
+
+    <div class="servicio">
+
+      <div class="icono">🔩</div>
+
+      <h3>Cerramientos</h3>
+
+      <p>
+        Fabricación e instalación de cerramientos en malla
+        eslabonada y diferentes sistemas metálicos.
+      </p>
+
+    </div>
+
+
+    <div class="servicio">
+
+      <div class="icono">🚪</div>
+
+      <h3>Puertas Metálicas</h3>
+
+      <p>
+        Fabricación de puertas metálicas, portones y
+        soluciones personalizadas.
+      </p>
+
+    </div>
+
+
+    <div class="servicio">
+
+      <div class="icono">🔥</div>
+
+      <h3>Soldadura</h3>
+
+      <p>
+        Trabajos de soldadura y fabricación de piezas
+        y estructuras metálicas.
+      </p>
+
+    </div>
+
+
+    <div class="servicio">
+
+      <div class="icono">🛠️</div>
+
+      <h3>Mantenimiento</h3>
+
+      <p>
+        Reparación, mantenimiento y adecuación de
+        estructuras y elementos metálicos.
+      </p>
+
+    </div>
+
+
+    <div class="servicio">
+
+      <div class="icono">🪨</div>
+
+      <h3>Acabados</h3>
+
+      <p>
+        Acabados en piedra, cocinas integrales, mesones,
+        superficies en mármol, sinterizado y otros materiales
+        y soluciones especiales.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<section id="proyectos">
+
+  <div class="titulo">
+
+    <h2>
+      Nuestros <span>Proyectos</span>
+    </h2>
+
+    <p>
+      Algunos ejemplos de nuestros trabajos
+    </p>
+
+  </div>
+
+  <div class="proyectos-grid">
+
+
+    <div class="proyecto">
+
+      <img
+        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
+        alt="Estructuras metálicas">
+
+      <div class="proyecto-info">
+
+        <h3>Estructuras metálicas</h3>
+
+        <p>
+          Fabricación e instalación de estructuras.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="proyecto">
+
+      <img
+        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80"
+        alt="Construcción">
+
+      <div class="proyecto-info">
+
+        <h3>Construcción</h3>
+
+        <p>
+          Soluciones para proyectos de construcción.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="proyecto">
+
+      <img
+        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+        alt="Obras y proyectos">
+
+      <div class="proyecto-info">
+
+        <h3>Obras y proyectos</h3>
+
+        <p>
+          Trabajos realizados con calidad y compromiso.
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<section id="contacto">
+
+  <div class="titulo">
+
+    <h2>
+      <span>Contáctanos</span>
+    </h2>
+
+    <p>
+      Solicita información o una cotización para tu proyecto
+    </p>
+
+  </div>
+
+
+  <div class="contacto-contenido">
+
+    <p>
+      Comunícate directamente con nosotros por teléfono
+      o WhatsApp para solicitar información y cotizaciones.
+    </p>
+
+
+    <div class="contacto-datos">
+
+
+      <div class="dato">
+
+        <strong>WhatsApp 1</strong>
+
+        <a href="https://wa.me/573008535991">
+          300 853 5991
+        </a>
+
+      </div>
+
+
+      <div class="dato">
+
+        <strong>WhatsApp 2</strong>
+
+        <a href="https://wa.me/573023578801">
+          302 357 8801
+        </a>
+
+      </div>
+
+
+      <div class="dato">
+
+        <strong>Ubicación</strong>
+
+        Colombia
+
+      </div>
+
+
+    </div>
+
+
+    <a
+      href="https://wa.me/573008535991?text=Hola%20CV%20Construcciones%20y%20Servicios%20SAS,%20quiero%20solicitar%20una%20cotizaci%C3%B3n."
+      class="btn whatsapp">
+      📱 Solicitar cotización por WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  © 2026
+  <span>CV Construcciones y Servicios SAS</span>.
+  Todos los derechos reservados.
+
+</footer>
 
 </body>
 
