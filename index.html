@@ -160,41 +160,30 @@ background:white;
 .nosotros-texto{
 max-width:900px;
 margin:0 auto 35px;
-
 text-align:center;
-
 font-size:18px;
 }
 
 .duenos{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-
 gap:25px;
-
 max-width:800px;
-
 margin:auto;
 }
 
 .dueno{
 background:#111;
 color:white;
-
 padding:30px;
-
 text-align:center;
-
 border-radius:8px;
-
 border-bottom:4px solid #f5b900;
 }
 
 .dueno h3{
 color:#f5b900;
-
 font-size:24px;
-
 margin-bottom:5px;
 }
 
@@ -206,23 +195,16 @@ background:#f4f4f4;
 
 .servicios-grid{
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
-
 gap:25px;
 }
 
 .servicio{
 background:white;
-
 padding:30px 20px;
-
 text-align:center;
-
 border-radius:8px;
-
 box-shadow:0 3px 12px rgba(0,0,0,.12);
-
 transition:.3s;
 }
 
@@ -232,13 +214,11 @@ transform:translateY(-5px);
 
 .icono{
 font-size:45px;
-
 margin-bottom:15px;
 }
 
 .servicio h3{
 margin-bottom:10px;
-
 color:#111;
 }
 
@@ -256,31 +236,20 @@ background:white;
 
 .proyectos-grid{
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
-
 gap:20px;
 }
 
 .proyecto{
 min-height:200px;
-
 background:#222;
-
 color:white;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 text-align:center;
-
 padding:20px;
-
 border-radius:8px;
-
 border-left:5px solid #f5b900;
 }
 
@@ -292,9 +261,7 @@ color:#f5b900;
 
 .contacto{
 background:#111;
-
 color:white;
-
 text-align:center;
 }
 
@@ -304,39 +271,79 @@ color:white;
 
 .contacto p{
 font-size:18px;
-
 margin:10px 0;
 }
 
-.whatsapp{
-display:inline-block;
+/* ================= WHATSAPP FLOTANTE ================= */
 
-margin-top:25px;
+.whatsapp-flotante{
+position:fixed;
+right:18px;
+bottom:20px;
+z-index:9999;
 
 background:#25D366;
-
 color:white;
 
-padding:14px 25px;
+padding:12px 16px;
+
+border-radius:50px;
 
 text-decoration:none;
 
-border-radius:5px;
+display:flex;
+align-items:center;
+gap:10px;
 
 font-weight:bold;
+
+box-shadow:0 4px 15px rgba(0,0,0,.35);
+
+transition:.3s;
 }
 
-/* ================= FOOTER ================= */
+.whatsapp-flotante:hover{
+transform:scale(1.06);
+}
+
+.whatsapp-icono{
+width:38px;
+height:38px;
+
+background:white;
+color:#25D366;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:23px;
+}
+
+.whatsapp-texto{
+display:flex;
+flex-direction:column;
+line-height:1.15;
+}
+
+.whatsapp-texto strong{
+font-size:16px;
+}
+
+.whatsapp-texto span{
+font-size:11px;
+font-weight:normal;
+}
+
+/* ================= PIE ================= */
 
 footer{
 background:#000;
-
 color:#aaa;
-
 text-align:center;
-
 padding:20px;
-
 font-size:14px;
 }
 
@@ -346,13 +353,11 @@ font-size:14px;
 
 header{
 flex-direction:column;
-
 gap:12px;
 }
 
 nav{
 justify-content:center;
-
 gap:10px;
 }
 
@@ -390,6 +395,22 @@ grid-template-columns:1fr;
 
 .proyectos-grid{
 grid-template-columns:1fr;
+}
+
+.whatsapp-flotante{
+right:12px;
+bottom:15px;
+padding:9px 13px;
+}
+
+.whatsapp-icono{
+width:34px;
+height:34px;
+font-size:20px;
+}
+
+.whatsapp-texto strong{
+font-size:14px;
 }
 
 }
@@ -662,7 +683,7 @@ para proyectos.
 
 
 
-<!-- DISEÑO -->
+<!-- DISEÑO Y FABRICACIÓN -->
 
 <div class="servicio">
 
@@ -753,74 +774,42 @@ Nuestros Proyectos
 
 
 <div class="proyecto">
-
-<h3>
-Estructuras Metálicas
-</h3>
-
+<h3>Estructuras Metálicas</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Cerramientos
-</h3>
-
+<h3>Cerramientos</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Ornamentación
-</h3>
-
+<h3>Ornamentación</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Cubiertas
-</h3>
-
+<h3>Cubiertas</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Obra Civil
-</h3>
-
+<h3>Obra Civil</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Espacios Públicos
-</h3>
-
+<h3>Espacios Públicos</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Redes de Alcantarillado
-</h3>
-
+<h3>Redes de Alcantarillado</h3>
 </div>
 
 
 <div class="proyecto">
-
-<h3>
-Proyectos Especiales
-</h3>
-
+<h3>Proyectos Especiales</h3>
 </div>
 
 
@@ -834,7 +823,6 @@ Proyectos Especiales
 
 <section class="contacto" id="contacto">
 
-
 <div class="section-title">
 
 <h2>
@@ -845,16 +833,13 @@ Contáctanos
 
 </div>
 
-
 <p>
 ¿Tienes un proyecto?
 </p>
 
-
 <p>
 Estamos listos para ayudarte.
 </p>
-
 
 <p>
 <strong>
@@ -862,18 +847,60 @@ CV Construcciones y Servicios SAS
 </strong>
 </p>
 
+</section>
+
+
+
+<!-- ================= WHATSAPP FLOTANTE ================= -->
 
 <a
-class="whatsapp"
-href="https://wa.me/573000000000"
-target="_blank">
+class="whatsapp-flotante"
+href="https://wa.me/573008535991?text=Hola%20CV%20Construcciones%20y%20Servicios%20SAS,%20estoy%20interesado%20en%20sus%20servicios."
+target="_blank"
+aria-label="CV WhatsApp">
 
-💬 Escríbenos por WhatsApp
+<div class="whatsapp-icono">
+💬
+</div>
+
+<div class="whatsapp-texto">
+
+<strong>
+CV WhatsApp
+</strong>
+
+<span>
+300 853 5991
+</span>
+
+</div>
 
 </a>
 
 
-</section>
+
+<!-- ================= SEGUNDO CONTACTO ================= -->
+
+<a
+href="https://wa.me/573023578801?text=Hola%20CV%20Construcciones%20y%20Servicios%20SAS,%20estoy%20interesado%20en%20sus%20servicios."
+target="_blank"
+style="
+position:fixed;
+right:18px;
+bottom:85px;
+z-index:9998;
+background:#111;
+color:white;
+padding:8px 14px;
+border-radius:25px;
+text-decoration:none;
+font-size:11px;
+box-shadow:0 3px 10px rgba(0,0,0,.3);
+">
+
+302 357 8801
+
+</a>
 
 
 
