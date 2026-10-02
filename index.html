@@ -1,608 +1,537 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CV Construcciones y Servicios SAS | Estructuras Metálicas</title>
+<title>CV Construcciones y Servicios SAS</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f4f4;
-      color: #222;
-      line-height: 1.6;
-    }
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  background:#f4f4f4;
+  line-height:1.6;
+}
 
-    /* HEADER */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #111;
-      color: white;
-      padding: 15px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 3px 10px rgba(0,0,0,.3);
-    }
+/* ENCABEZADO */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#111;
+  color:white;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #f5b900;
-    }
+.logo{
+  color:#f5b900;
+  font-size:25px;
+  font-weight:bold;
+}
 
-    .logo span {
-      color: white;
-      font-size: 15px;
-      display: block;
-      letter-spacing: 1px;
-    }
+.logo span{
+  display:block;
+  color:white;
+  font-size:13px;
+  letter-spacing:1px;
+}
 
-    nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+nav{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:14px;
+}
 
-    nav a:hover {
-      color: #f5b900;
-    }
+nav a:hover{
+  color:#f5b900;
+}
 
-    /* HERO */
-    .hero {
-      min-height: 85vh;
-      background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)),
-        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 40px 20px;
-    }
+/* INICIO */
+.hero{
+  min-height:85vh;
+  background:
+  linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+  url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:40px 20px;
+}
 
-    .hero-content {
-      max-width: 850px;
-    }
+.hero-content{
+  max-width:850px;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
-      color: #f5b900;
-    }
+.hero h1{
+  color:#f5b900;
+  font-size:48px;
+  margin-bottom:15px;
+}
 
-    .hero h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
+.hero h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+.hero p{
+  font-size:18px;
+  margin-bottom:30px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 13px 25px;
-      margin: 5px;
-      background: #f5b900;
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: .3s;
-    }
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  margin:5px;
+  background:#f5b900;
+  color:#111;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
+}
 
-    .btn:hover {
-      background: white;
-      transform: translateY(-2px);
-    }
+/* SECCIONES */
+section{
+  padding:70px 7%;
+}
 
-    /* SECCIONES */
-    section {
-      padding: 70px 7%;
-    }
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
+.section-title h2{
+  font-size:35px;
+  margin-bottom:10px;
+}
 
-    .section-title h2 {
-      font-size: 35px;
-      color: #111;
-      margin-bottom: 10px;
-    }
+.section-title div{
+  width:70px;
+  height:4px;
+  background:#f5b900;
+  margin:auto;
+}
 
-    .section-title div {
-      width: 70px;
-      height: 4px;
-      background: #f5b900;
-      margin: auto;
-    }
+/* NOSOTROS */
+.nosotros{
+  background:white;
+}
 
-    /* NOSOTROS */
-    .nosotros {
-      background: white;
-    }
+.nosotros-texto{
+  max-width:900px;
+  margin:0 auto 35px;
+  text-align:center;
+  font-size:18px;
+}
 
-    .nosotros-texto {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 35px;
-    }
+.duenos{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+  max-width:800px;
+  margin:auto;
+}
 
-    .duenos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-      max-width: 800px;
-      margin: auto;
-    }
+.dueno{
+  background:#111;
+  color:white;
+  padding:30px;
+  text-align:center;
+  border-radius:8px;
+  border-bottom:4px solid #f5b900;
+}
 
-    .dueno {
-      background: #111;
-      color: white;
-      padding: 30px;
-      text-align: center;
-      border-radius: 8px;
-      border-bottom: 4px solid #f5b900;
-    }
+.dueno h3{
+  color:#f5b900;
+  font-size:24px;
+}
 
-    .dueno h3 {
-      color: #f5b900;
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
+/* SERVICIOS */
+.servicios{
+  background:#f4f4f4;
+}
 
-    .dueno p {
-      font-size: 17px;
-    }
+.servicios-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
 
-    /* SERVICIOS */
-    .servicios {
-      background: #f4f4f4;
-    }
+.servicio{
+  background:white;
+  padding:30px 20px;
+  text-align:center;
+  border-radius:8px;
+  box-shadow:0 3px 12px rgba(0,0,0,.12);
+}
 
-    .servicios-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.icono{
+  font-size:45px;
+  margin-bottom:15px;
+}
 
-    .servicio {
-      background: white;
-      padding: 30px 20px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.12);
-      transition: .3s;
-    }
+.servicio h3{
+  margin-bottom:10px;
+}
 
-    .servicio:hover {
-      transform: translateY(-5px);
-    }
+/* PROYECTOS */
+.proyectos{
+  background:white;
+}
 
-    .servicio .icono {
-      font-size: 45px;
-      margin-bottom: 15px;
-    }
+.proyectos-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
 
-    .servicio h3 {
-      color: #111;
-      margin-bottom: 10px;
-    }
+.proyecto{
+  min-height:200px;
+  background:#222;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+  border-radius:8px;
+  border-left:5px solid #f5b900;
+}
 
-    /* PROYECTOS */
-    .proyectos {
-      background: white;
-    }
+.proyecto h3{
+  color:#f5b900;
+}
 
-    .proyectos-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
+/* CONTACTO */
+.contacto{
+  background:#111;
+  color:white;
+  text-align:center;
+}
 
-    .proyecto {
-      min-height: 220px;
-      background: #222;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      border-radius: 8px;
-      border-left: 5px solid #f5b900;
-    }
+.contacto .section-title h2{
+  color:white;
+}
 
-    .proyecto h3 {
-      color: #f5b900;
-    }
+.contacto p{
+  font-size:18px;
+  margin:10px 0;
+}
 
-    /* CONTACTO */
-    .contacto {
-      background: #111;
-      color: white;
-      text-align: center;
-    }
+.whatsapp{
+  display:inline-block;
+  margin-top:25px;
+  background:#25D366;
+  color:white;
+  padding:14px 25px;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+}
 
-    .contacto .section-title h2 {
-      color: white;
-    }
+/* PIE */
+footer{
+  background:#000;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
 
-    .contacto p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
+/* CELULAR */
+@media(max-width:768px){
 
-    .whatsapp {
-      margin-top: 25px;
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 14px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+  header{
+    flex-direction:column;
+    gap:12px;
+  }
 
-    /* FOOTER */
-    footer {
-      background: #000;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
+  nav{
+    justify-content:center;
+    gap:10px;
+  }
 
-    /* CELULAR */
-    @media (max-width: 768px) {
+  nav a{
+    font-size:12px;
+  }
 
-      header {
-        flex-direction: column;
-        gap: 12px;
-      }
+  .hero h1{
+    font-size:34px;
+  }
 
-      nav {
-        gap: 10px;
-      }
+  .hero h2{
+    font-size:22px;
+  }
 
-      nav a {
-        font-size: 12px;
-      }
+  .hero p{
+    font-size:16px;
+  }
 
-      .hero h1 {
-        font-size: 34px;
-      }
+  section{
+    padding:55px 5%;
+  }
 
-      .hero h2 {
-        font-size: 22px;
-      }
+  .section-title h2{
+    font-size:28px;
+  }
 
-      .hero p {
-        font-size: 16px;
-      }
+  .duenos{
+    grid-template-columns:1fr;
+  }
 
-      section {
-        padding: 55px 5%;
-      }
+  .servicios-grid{
+    grid-template-columns:1fr;
+  }
 
-      .section-title h2 {
-        font-size: 28px;
-      }
-
-      .duenos {
-        grid-template-columns: 1fr;
-      }
-
-      .servicios-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .proyectos-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  .proyectos-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- ENCABEZADO -->
-  <header>
+<!-- ENCABEZADO -->
+<header>
 
-    <div class="logo">
-      CV
-      <span>CONSTRUCCIONES</span>
-    </div>
+<div class="logo">
+CV
+<span>CONSTRUCCIONES</span>
+</div>
 
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-  </header>
+</header>
 
 
-  <!-- INICIO -->
-  <section class="hero" id="inicio">
+<!-- INICIO -->
+<section class="hero" id="inicio">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-      <h1>CV CONSTRUCCIONES</h1>
+<h1>CV CONSTRUCCIONES</h1>
 
-      <h2>Construcciones y Servicios SAS</h2>
+<h2>Construcciones y Servicios SAS</h2>
 
-      <p>
-        Soluciones profesionales en estructuras metálicas,
-        construcción, fabricación e instalación.
-      </p>
+<p>
+Soluciones profesionales en estructuras metálicas,
+construcción, fabricación e instalación.
+</p>
 
-      <a href="#servicios" class="btn">
-        Ver nuestros servicios
-      </a>
+<a href="#servicios" class="btn">
+Ver nuestros servicios
+</a>
 
-      <a href="#contacto" class="btn">
-        Contáctanos
-      </a>
+<a href="#contacto" class="btn">
+Contáctanos
+</a>
+
+</div>
+
+</section>
+
+
+<!-- NOSOTROS -->
+<section class="nosotros" id="nosotros">
 
-    </div>
+<div class="section-title">
+<h2>Nosotros</h2>
+<div></div>
+</div>
+
+<p class="nosotros-texto">
+
+En <strong>CV Construcciones y Servicios SAS</strong>
+trabajamos para ofrecer soluciones profesionales en
+construcción y estructuras metálicas, brindando calidad,
+responsabilidad y compromiso en cada proyecto.
 
-  </section>
+</p>
 
+<div class="duenos">
 
-  <!-- NOSOTROS -->
-  <section class="nosotros" id="nosotros">
+<div class="dueno">
+<h3>Sebastián Valero</h3>
+<p>Propietario</p>
+</div>
+
+<div class="dueno">
+<h3>Maickel Campuzano</h3>
+<p>Propietario</p>
+</div>
 
-    <div class="section-title">
+</div>
 
-      <h2>Nosotros</h2>
+</section>
 
-      <div></div>
 
-    </div>
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
 
-    <p class="nosotros-texto">
+<div class="section-title">
+<h2>Nuestros Servicios</h2>
+<div></div>
+</div>
 
-      En <strong>CV Construcciones y Servicios SAS</strong>
-      trabajamos para ofrecer soluciones profesionales en
-      construcción y estructuras metálicas, brindando calidad,
-      responsabilidad y compromiso en cada proyecto.
+<div class="servicios-grid">
 
-    </p>
+<div class="servicio">
+<div class="icono">🏗️</div>
+<h3>Estructuras Metálicas</h3>
+<p>
+Diseño, fabricación e instalación de estructuras
+metálicas para diferentes tipos de proyectos.
+</p>
+</div>
 
-    <div class="duenos">
-
-      <div class="dueno">
-
-        <h3>Sebastián Valero</h3>
-
-        <p>Propietario</p>
-
-      </div>
-
-      <div class="dueno">
-
-        <h3>Maickel Campuzano</h3>
-
-        <p>Propietario</p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SERVICIOS -->
-  <section class="servicios" id="servicios">
-
-    <div class="section-title">
-
-      <h2>Nuestros Servicios</h2>
-
-      <div></div>
-
-    </div>
-
-    <div class="servicios-grid">
-
-      <div class="servicio">
-
-        <div class="icono">🏗️</div>
-
-        <h3>Estructuras Metálicas</h3>
-
-        <p>
-          Diseño, fabricación e instalación de estructuras
-          metálicas para diferentes tipos de proyectos.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <div class="icono">🏠</div>
-
-        <h3>Cubiertas y Techos</h3>
-
-        <p>
-          Fabricación e instalación de estructuras para
-          cubiertas y diferentes soluciones de techado.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <div class="icono">🚧</div>
-
-        <h3>Cerramientos</h3>
-
-        <p>
-          Fabricación e instalación de cerramientos,
-          divisiones y soluciones metálicas.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <div class="icono">🚪</div>
-
-        <h3>Puertas Metálicas</h3>
-
-        <p>
-          Fabricación de puertas metálicas para proyectos
-          residenciales, comerciales e industriales.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <div class="icono">🔧</div>
-
-        <h3>Mantenimiento</h3>
-
-        <p>
-          Mantenimiento, reparación y adecuación de
-          estructuras y elementos metálicos.
-        </p>
-
-      </div>
-
-
-      <div class="servicio">
-
-        <div class="icono">📐</div>
-
-        <h3>Diseño y Fabricación</h3>
-
-        <p>
-          Desarrollo de soluciones metálicas de acuerdo
-          con las necesidades y medidas de cada proyecto.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PROYECTOS -->
-  <section class="proyectos" id="proyectos">
-
-    <div class="section-title">
-
-      <h2>Nuestros Proyectos</h2>
-
-      <div></div>
-
-    </div>
-
-    <div class="proyectos-grid">
-
-      <div class="proyecto">
-        <h3>Estructuras Metálicas</h3>
-      </div>
-
-      <div class="proyecto">
-        <h3>Cerramientos</h3>
-      </div>
-
-      <div class="proyecto">
-        <h3>Puertas y Portones</h3>
-      </div>
-
-      <div class="proyecto">
-        <h3>Cubiertas</h3>
-      </div>
-
-      <div class="proyecto">
-        <h3>Obras Industriales</h3>
-      </div>
-
-      <div class="proyecto">
-        <h3>Proyectos Especiales</h3>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACTO -->
-  <section class="contacto" id="contacto">
-
-    <div class="section-title">
-
-      <h2>Contáctanos</h2>
-
-      <div></div>
-
-    </div>
-
-    <p>
-      ¿Tienes un proyecto? Estamos listos para ayudarte.
-    </p>
-
-    <p>
-      CV Construcciones y Servicios SAS
-    </p>
-
-    <a
-      class="whatsapp"
-      href="https://wa.me/573000000000"
-      target="_blank">
-      💬 Escríbenos por WhatsApp
-    </a>
-
-  </section>
-
-
-  <!-- PIE DE PÁGINA -->
-  <footer>
-
-    © 2026 CV Construcciones y Servicios SAS.
-    Todos los derechos reservados.
-
-  </footer>
+<div class="servicio">
+<div class="icono">🏠</div>
+<h3>Cubiertas y Techos</h3>
+<p>
+Fabricación e instalación de estructuras para
+cubiertas y diferentes soluciones de techado.
+</p>
+</div>
+
+<div class="servicio">
+<div class="icono">🚧</div>
+<h3>Cerramientos</h3>
+<p>
+Fabricación e instalación de cerramientos,
+divisiones y soluciones metálicas.
+</p>
+</div>
+
+<div class="servicio">
+<div class="icono">🚪</div>
+<h3>Puertas Metálicas</h3>
+<p>
+Fabricación de puertas metálicas para proyectos
+residenciales, comerciales e industriales.
+</p>
+</div>
+
+<div class="servicio">
+<div class="icono">🔧</div>
+<h3>Mantenimiento</h3>
+<p>
+Mantenimiento, reparación y adecuación de
+estructuras y elementos metálicos.
+</p>
+</div>
+
+<div class="servicio">
+<div class="icono">📐</div>
+<h3>Diseño y Fabricación</h3>
+<p>
+Desarrollo de soluciones metálicas de acuerdo
+con las necesidades y medidas de cada proyecto.
+</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- PROYECTOS -->
+<section class="proyectos" id="proyectos">
+
+<div class="section-title">
+<h2>Nuestros Proyectos</h2>
+<div></div>
+</div>
+
+<div class="proyectos-grid">
+
+<div class="proyecto">
+<h3>Estructuras Metálicas</h3>
+</div>
+
+<div class="proyecto">
+<h3>Cerramientos</h3>
+</div>
+
+<div class="proyecto">
+<h3>Puertas y Portones</h3>
+</div>
+
+<div class="proyecto">
+<h3>Cubiertas</h3>
+</div>
+
+<div class="proyecto">
+<h3>Obras Industriales</h3>
+</div>
+
+<div class="proyecto">
+<h3>Proyectos Especiales</h3>
+</div>
+
+</div>
+</section>
+
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+
+<div class="section-title">
+<h2>Contáctanos</h2>
+<div></div>
+</div>
+
+<p>
+¿Tienes un proyecto? Estamos listos para ayudarte.
+</p>
+
+<p>
+CV Construcciones y Servicios SAS
+</p>
+
+<a class="whatsapp"
+href="https://wa.me/573000000000"
+target="_blank">
+💬 Escríbenos por WhatsApp
+</a>
+
+</section>
+
+
+<!-- PIE DE PÁGINA -->
+<footer>
+
+© 2026 CV Construcciones y Servicios SAS.
+Todos los derechos reservados.
+
+</footer>
 
 </body>
-
 </html>
